@@ -1,0 +1,39 @@
+<html>
+<head>
+</head>
+<body>
+<p id="geo_loc"><p>
+<script>
+function show_it(lat, lon)
+	{
+		var o = 'Found you at latitude ' + lat + ', longitude ' + lon;
+		if (document.getElementById)
+		{
+			document.getElementById('geo_loc').innerHTML = o;
+		}
+		else
+		{
+			alert(o);
+		}
+	}
+	if (navigator.geolocation)
+	{
+		navigator.geolocation.getCurrentPosition(function(position) {  
+			show_it(position.coords.latitude, position.coords.longitude);  
+		} );
+	}
+	else
+	{
+		var o = 'I\'m sorry, but geolocation services are not supported by your browser.';
+		if (document.getElementById)
+		{
+			document.getElementById('geo_loc').innerHTML = o;
+		}
+		else
+		{
+			alert(o);
+		}
+	}
+	</script>
+</body>
+</html>
