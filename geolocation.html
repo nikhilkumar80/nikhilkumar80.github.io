@@ -4,9 +4,12 @@
 <body>
 <p id="geo_loc"><p>
 <script>
-function show_it(lat, lon)
+function show_it(coord)
 	{
-		var o = 'Found you at latitude ' + lat + ', longitude ' + lon;
+		var o = '';
+		for(var i in coord){
+			o += i +": " + coord[i] + '<br />';
+		}
 		if (document.getElementById)
 		{
 			document.getElementById('geo_loc').innerHTML = o;
@@ -19,7 +22,7 @@ function show_it(lat, lon)
 	if (navigator.geolocation)
 	{
 		navigator.geolocation.getCurrentPosition(function(position) {  
-			show_it(position.coords.latitude, position.coords.longitude);  
+			show_it(position.coords);  
 		} );
 	}
 	else
