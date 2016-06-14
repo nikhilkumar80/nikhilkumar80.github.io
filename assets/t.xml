@@ -31,7 +31,7 @@
             </inputs>
             <execute><![CDATA[
                 try{
-                    y.log(locations);
+                    y.log(JSON.parse(locations));
                 } catch (exception) {
                     y.exit(500, exception);
                 }
