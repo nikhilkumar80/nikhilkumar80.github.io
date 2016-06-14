@@ -32,6 +32,7 @@
             <execute><![CDATA[
                 try{
                     y.log(JSON.parse(locations));
+                    y.log({"ddsf":1});
                 } catch (exception) {
                     y.exit(500, exception);
                 }
