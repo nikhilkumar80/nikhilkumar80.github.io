@@ -20,6 +20,10 @@
   },
   "homepage": "https://github.com/nikhilkumar80/nikhilkumar80.github.io#readme",
   "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
+    "mocha": "^3.2.0",
+    "sinon": "^1.17.7",
     "sinon-chai": "^2.8.0"
   }
 }
