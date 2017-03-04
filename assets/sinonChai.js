@@ -208,9 +208,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 var sinonChai = __webpack_require__(0);
-if (window) {
-    window.sinonChai = sinonChai;
-}
+
 
 /***/ })
 /******/ ]);
