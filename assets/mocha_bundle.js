@@ -8650,18 +8650,10 @@ Library.prototype.test = function(obj, type) {
 /* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-
 var chai = __webpack_require__(12);
 var sinon = __webpack_require__(14);
 var sinonChai = __webpack_require__(13);
-chai.should();
 chai.use(sinonChai);
-
-if (window) {
-    window.chai = chai;
-    window.sinon = sinon;
-}
 
 /***/ })
 /******/ ]);
