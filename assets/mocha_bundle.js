@@ -8658,8 +8658,10 @@ var sinonChai = __webpack_require__(13);
 chai.should();
 chai.use(sinonChai);
 
-module.exports = {
-    test: 1
+if (window) {
+    window.mocha = mocha;
+    window.chai = chai;
+    window.sinon = sinon;
 }
 
 /***/ })
