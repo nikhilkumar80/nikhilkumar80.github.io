@@ -1,9 +1,9 @@
 var path = require('path');
 
 module.exports = {
-    entry: './src/mocha.js',
+    entry: './src/sinonChai.js',
     output: {
         path: path.resolve(__dirname, './assets'),
-        filename: 'mocha_bundle.js'
+        filename: 'sinonChai.js'
     }
 };
