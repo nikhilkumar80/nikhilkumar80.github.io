@@ -1,0 +1,25 @@
+{
+  "name": "nikhilkumar80.github.io",
+  "version": "1.0.0",
+  "description": "nikhilkumar80.github.io =======================",
+  "main": "msToHuman.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikhilkumar80/nikhilkumar80.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nikhilkumar80/nikhilkumar80.github.io/issues"
+  },
+  "homepage": "https://github.com/nikhilkumar80/nikhilkumar80.github.io#readme",
+  "devDependencies": {
+    "sinon-chai": "^2.8.0"
+  }
+}
