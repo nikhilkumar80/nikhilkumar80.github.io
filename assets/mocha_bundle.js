@@ -8655,5 +8655,10 @@ var sinon = __webpack_require__(14);
 var sinonChai = __webpack_require__(13);
 chai.use(sinonChai);
 
+if (window) {
+    window.chai = chai;
+    window.sinon = sinon;
+}
+
 /***/ })
 /******/ ]);
