@@ -770,5 +770,9 @@ module.exports = {
 var sinonChai = __webpack_require__(1);
 var chaiAsPromised = __webpack_require__(0);
 
+if (chai) {
+    chai.use(chaiAsPromised);
+}
+
 /***/ })
 /******/ ]);
