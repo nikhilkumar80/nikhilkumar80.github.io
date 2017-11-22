@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="description" content="Playgrount - lodash">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Exception</title>
+</head>
+<body>
+<script>
+window.onerror = function() {
+  console.log('onerror:', arguments);
+}
+
+window.addEventListener('unhandledrejection', function(event) {
+    console.log('unhandledrejection---------', event.reason);
+});
+
+/*
+const promise = new Promise((resolve, reject) => {
+  reject(new Error("Hello"));                
+}).catch(e => {
+  setTimeout(() => {
+      throw e;
+  }, 0);
+});
+*/
+const promise2 = new Promise((resolve, reject) => {
+  resolve();              
+}).then(() => {
+    setTimeout(() => {
+
+  throw new Error("Hello");
+        }, 0);
+
+});
+
+//throw new Error("Hello");
+ 
+/*
+const promise =  new Promise((resolve, reject) => {
+  throw new Error("Hello", 10);                
+}).catch(e => {
+  console.log('bbb----------', e);
+  throw e;
+});
+*/
+</script>
+</body>
+</html>
