@@ -43,13 +43,26 @@
     }
     
     .clearfix:after {
-      content: ".";
-      display: block;
-      height: 0;
-      clear: both;
-      visibility: hidden;
-      }
+        content: ".";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+    }
+    .clearfix {display: inline-block;}  /* for IE/Mac */
+
   </style>
+  <!--[if IE]>
+  <style type="text/css">
+    .clearfix {
+      zoom: 1;     /* triggers hasLayout */
+      display: block;     /* resets display for IE/Win */
+      }  /* Only IE can see inside the conditional comment
+      and read this CSS rule. Don't ever use a normal HTML
+      comment inside the CC or it will close prematurely. */
+  </style>
+  <![endif]-->
+
   <div class="parent clearfix">
       <div class="c2">unverified account </div>
       <div class="c1">aaaaa bbbbb ccccc ddddd eeeee fffff ggggg hhhhh</div>
@@ -60,6 +73,12 @@
   <div class="parent2">
       <div class="c2-1">aaaaa bbbbb ccccc ddddd eeeee fffff ggggg hhhhh</div>
       <div class="c2-2">unverified account </div>
+  </div>
+  
+  <div>
+    <div style="float:left; width:30%;"><p>Some content</p></div>
+    <p>Text not inside the float</p>
+    <div style="clear:both;"></div>
   </div>
 </body>
 </html>
