@@ -17,16 +17,41 @@
       white-space: nowrap;
       word-break: keep-all;
       text-overflow: ellipsis;
+      background: #aaaaff;
     }
     .c2 {
       float: right;
-      margin-left: 8px
+      margin-left: 8px;
+      background: #aaffaa;
+    }
+    
+    .parent2 {
+       overflow: hidden;
+       background: #ffaaaa;
+       width: 300px;
+    }
+    .c2-1 {
+      float: left;
+      width: 75%;
+            background: #aaaaff;
+
+    }
+    .c2-2 {
+      float: right;
+      width: 23%;
+      background: #aaffaa;
     }
   </style>
   <div class="parent">
       <div class="c2">unverified account </div>
       <div class="c1">aaaaa bbbbb ccccc ddddd eeeee fffff ggggg hhhhh</div>
   </div>
-
+  
+  <br />
+  
+  <div class="parent2">
+      <div class="c2-1">aaaaa bbbbb ccccc ddddd eeeee fffff ggggg hhhhh</div>
+      <div class="c2-2">unverified account </div>
+  </div>
 </body>
 </html>
