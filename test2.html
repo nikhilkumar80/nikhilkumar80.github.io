@@ -41,8 +41,16 @@
       width: 23%;
       background: #aaffaa;
     }
+    
+    .clearfix:after {
+      content: ".";
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden;
+      }
   </style>
-  <div class="parent">
+  <div class="parent clearfix">
       <div class="c2">unverified account </div>
       <div class="c1">aaaaa bbbbb ccccc ddddd eeeee fffff ggggg hhhhh</div>
   </div>
