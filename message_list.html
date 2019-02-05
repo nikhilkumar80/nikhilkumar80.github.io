@@ -2,10 +2,13 @@
 try{if(self!==top&&(top.location.href=self.location.href),self!==top)for(;0<navigator.userAgent.toLowerCase().indexOf("khtml"););}catch(o){}
           </script><script type="text/javascript" nonce="Fw559NqQbyQAOepcPSM9hHj56yA9r+srLTTOkk+9hDEt51zP">
 /*! CMP 2.9.1 Copyright 2018 Oath Holdings, Inc. */
+          function niklog(str) {
+      document.getElementById('test').innerHTML = document.getElementById('test').innerHTML + '<br />' + str;
+  }
 ! function(e) {
     var t = {};
-
-    function n(r) {
+niklog('-----111');
+    function n(r) {niklog('-----222');
         if (t[r]) return t[r].exports;
         var o = t[r] = {
             i: r,
@@ -15,29 +18,34 @@ try{if(self!==top&&(top.location.href=self.location.href),self!==top)for(;0<navi
         return e[r].call(o.exports, o, o.exports, n), o.l = !0, o.exports
     }
     n.m = e, n.c = t, n.d = function(e, t, r) {
+              niklog('-----333');
         n.o(e, t) || Object.defineProperty(e, t, {
             configurable: !1,
             enumerable: !0,
             get: r
         })
     }, n.n = function(e) {
-        alert(111);
+              niklog('-----444');
         var t = e && e.__esModule ? function() {
-            alert(123);
-            return e.default
+niklog('-----555');
+                  return e.default
         } : function() {
             return e
         };
         return n.d(t, "a", t), t
     }, n.o = function(e, t) {
+              niklog('-----666');
         return Object.prototype.hasOwnProperty.call(e, t)
     }, n.p = "/", n(n.s = 2)
 }({
     2: function(e, t) {
+              niklog('-----777');
         ! function() {
+                  niklog('-----888');
             var e = !1;
 
             function t(e) {
+                      niklog('-----999');
                 var t = "string" == typeof e.data,
                     n = e.data;
                 if (t) try {
@@ -58,6 +66,7 @@ try{if(self!==top&&(top.location.href=self.location.href),self!==top)for(;0<navi
                 }
             }
             "function" == typeof __cmp || (window.__cmp = function() {
+                      niklog('-----1010');
                 var t = arguments;
                 if (__cmp.a = __cmp.a || [], !t.length) return __cmp.a;
                 "ping" === t[0] ? t[2]({
@@ -65,6 +74,7 @@ try{if(self!==top&&(top.location.href=self.location.href),self!==top)for(;0<navi
                     cmpLoaded: !1
                 }, !0) : __cmp.a.push([].slice.apply(t))
             }, function e() {
+                      niklog('-----1212');
                 if (document.body && document.body.firstChild) {
                     var t = document.body,
                         n = document.createElement("iframe");
